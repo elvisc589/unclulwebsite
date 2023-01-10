@@ -4,9 +4,16 @@ import {AiFillStar} from 'react-icons/ai'
 
 const Reviews = () => {
     return(
+        <div className='bg-[var(--brown)]'>
         <div id='reviews' className='max-w-[1140px] m-auto w-full px-4 py-16'>
-             <h2 className='text-center text-gray-700 p-4'>
-        <body className='gridplace-items-center grid grid-cols-1 md:grid-cols-2 bg-gray-100 rounded-3xl'>
+             <h2 className='text-3xl text-center text-white p-4'>Celebrating 22 Years of Eliteness</h2>
+              <p className='text-white text-center'>Happy Charter Day to The Absolutely Incredible Alpha Iota Chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. Congratulations on 19 Years of Excellence and Hermandad!</p>
+              <div className='grid place-items-center mt-12'>
+              <iframe className='md:w-[670px] md:h-[400px] w-[465px] h-[275px]' src="https://www.youtube.com/embed/54bM81UxAA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>{/*560px-315px 
+        
+        <body className='gridplace-items-center grid grid-cols-1 md:grid-cols-2 rounded-3xl'>
+            
             <div className='flex flex-col p-10 gap-10 gap-4'>
             
                 <figure className='bg-white rounded-2xl shadow-lg overflow-hidden rotate-1 hover:rotate-0 transition duration-200'>
@@ -68,10 +75,10 @@ const Reviews = () => {
                     </div>
                 </figure>
                 </div>
-        </body>
-        </h2>
+    </body>*/}
+       
         </div>
-
+</div>
     )}
 
 export default Reviews

@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/stellar');
 
 :root{
   --primary-dark: #5651e5;
   --primary-light: #709dff;
+  --gold: #EEAA00;
+  --brown: #653819;
 }
 
 @layer base{
@@ -16,7 +18,7 @@
 }
 
 body{
-  @apply font-[Poppins]
+  @apply font-['Helvetica_Neue']
 }
 
 li{
@@ -24,9 +26,9 @@ li{
 }
 
 button{
-  @apply px-4 py-2 text-white border bg-gradient-to-r from-indigo-600 via-violet-700 to-indigo-600
+  @apply px-4 py-2 text-white border bg-[var(--brown)]
 }
 
-h2{
-  @apply text-xl font-bold
-}/*from-[var(--primary-dark)] to-[var(--primary-light)]*/ 
+h2, h1{
+  @apply text-xl font-['Helvetica_Neue']
+}

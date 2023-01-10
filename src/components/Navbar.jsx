@@ -4,9 +4,11 @@ import{
     FaFacebookF,
     FaTiktok,
     FaGooglePlusG,
+    FaTwitter,
     FaInstagram,
     FaBars,
 } from 'react-icons/fa';
+import logo from '../assets/unclogo.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -14,33 +16,35 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-    <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80'>
-        <ul className='hidden sm:flex px-4'>
+    <div className='w-full flex justify-between items-center absolute z-10 text-white bg-gray-900/30'>
+         <img className='h-20 w-69' src={logo} alt='/'></img>
+         <ul className='hidden text-[var(--gold)] items-center sm:flex px-4'>
+       
             <li>
                 <a href='/'>Home</a>
 
             </li>
             <li>
-                <a href='#reviews'>Reviews</a>
+                <a href='/about'>About Us: AI</a>
             </li>
             <li>
-                <a href='#gallery'>Gallery</a>
+                <a href='/nationals'>Nationals</a>
             </li>
             
             
             <li>
-                <a href='#about'>About</a>
+                <a href='/lambdas'>Meet the Lambdas</a>
             </li>
             <li>
-                <a href='#contact'>Contact</a>
+                <a href='/events'>Events</a>
             </li>
             
         </ul>
+        
         <div className='flex justify-between'>
-            <a target='_blank' href='https://www.facebook.com/flowpaints'><FaFacebookF className='mx-4'/></a>
-            <a target='_blank' href='https://www.thumbtack.com/nc/burlington/interior-painting/flowpaint-llc/service/424719051419484162'><SiThumbtack className='mx-4'/></a>
-            <a target='_blank' href='https://www.tiktok.com/@flow.paint'><FaTiktok className='mx-4'/></a>
-            
+            <a target='_blank' href='https://www.facebook.com/UNC.LUL/'><FaFacebookF className='mx-4'/></a>
+            <a target='_blank' href='https://twitter.com/UNC_LUL'><FaTwitter className='mx-4'/></a>
+            <a target='_blank' href='https://www.instagram.com/unc_lul/'><FaInstagram className='mx-4'/></a>
         </div>
         <div onClick={handleNav} className='sm:hidden z-10'>
             <FaBars size={20} className='mr-4 cursor-pointer'/>
@@ -58,16 +62,16 @@ const Navbar = () => {
 
             </li>
             <li className='text-2xl py-8'>
-                <a href='#reviews'>Reviews</a>
+            <a href='/about'>About Us: AI</a>
             </li>
             <li className='text-2xl py-8'>
-                <a href='gallery'>Gallery</a>
+            <a href='/nationals'>Nationals</a>
             </li>
             <li className='text-2xl py-8'>
-                <a href='#about'>About</a>
+            <a href='/lambdas'>Meet the Lambdas</a>
             </li>
             <li className='text-2xl py-8'>
-                <a href='#contact'>Contact</a>
+            <a href='/events'>Events</a>
             </li>
         </ul>
         </div>
