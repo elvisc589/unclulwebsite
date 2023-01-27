@@ -17,7 +17,10 @@ const Navbar = () => {
     }
     return (
     <div className='w-full flex justify-between items-center absolute z-10 text-white bg-gray-900/30'>
+         <a href='/'>
          <img className='h-20 w-69' src={logo} alt='/'></img>
+         </a>
+         
          <ul className='hidden text-[var(--gold)] items-center sm:flex px-4'>
        
             <li>
@@ -42,9 +45,9 @@ const Navbar = () => {
         </ul>
         
         <div className='flex justify-between'>
-            <a target='_blank' href='https://www.facebook.com/UNC.LUL/'><FaFacebookF className='mx-4'/></a>
-            <a target='_blank' href='https://twitter.com/UNC_LUL'><FaTwitter className='mx-4'/></a>
-            <a target='_blank' href='https://www.instagram.com/unc_lul/'><FaInstagram className='mx-4'/></a>
+            <a target='_blank' href='https://www.facebook.com/UNC.LUL/'><FaFacebookF className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://twitter.com/UNC_LUL'><FaTwitter className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://www.instagram.com/unc_lul/'><FaInstagram className='mx-4 fill-[var(--gold)]'/></a>
         </div>
         <div onClick={handleNav} className='sm:hidden z-10'>
             <FaBars size={20} className='mr-4 cursor-pointer'/>
