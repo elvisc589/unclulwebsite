@@ -53,7 +53,7 @@ const Lambdas = () => {
             <SelectsCard bg={edgar} p3='Major: Psychology' p5='Hometown: Ashville, NC' p4='Ethnic Background: Mexican' p2='Crossed: Fall 2022' p1='Position: Recruitment & Outreach Chair' h2='Edgar Torres'/>
             <SelectsCard bg={elvis} p3='Major: Computer Science B.S.' p5='Hometown: Burlington, NC' p4='Ethnic Background: Ecuadorian' p2='Crossed: Fall 2022' p1='Position: Webmaster' h2='Elvis Chiqui'/>
             <SelectsCard bg={jose} p3='Major: Pyschology and Politcal Science' p5='Hometown: Kinston, NC' p4='Ethnic Background: Honduran' p2='Crossed: Fall 2022' p1='Position: Recruitment & Outreach Chair' h2='Jose Cartagena'/>
-            <SelectsCard bg={bryan} p3='Major: Public Policy' p5='Hometown: Silver Spring, MD' p4='Ethnic Background: Salvadoran' p2='Crossed: Fall 2022' p1='Position: Strollmaster' h2='Bryan Sorto'/>
+            <SelectsCard bg={bryan} p3='Major: Public Policy' p5='Hometown: Silver Spring, MD' p4='Ethnic Background: Salvadoran' p2='Crossed: Fall 2022' p1='Position: Community Service Chair' h2='Bryan Sorto'/>
             <SelectsCard bg={obdulio} p3='Major: Chemistry' p5='Hometown: Woodbridge, VA' p4='Ethnic Background: Salvadoran' p2='Crossed: Fall 2022' p1='Position: Secretary' h2='Obdulio Vasquez'/>
             </div>
     </div>
@@ -129,7 +129,7 @@ const Lambdas = () => {
             <SelectsCard bg={christian} p1='Graduated: 2022' p2='Major: Computer Science' p3='Occupation:' p4='Hometown: New York City, NY' p5='Ethnic Background: Ecuadorian' h2='Christian Cambizaca'/>
             <SelectsCard bg={dariel} p1='Graduated: 2022' p2='Major: Biology & Anthropology' p3='Occupation:' p4='Hometown: San Juan, PR' p5='Ethnic Background: Puerto Rican' h2='Dariel Cortes'/>
             <SelectsCard bg={christ} p1='Graduated: 2022' p2='Major: Economics' p3='Occupation:' p4='Hometown: Bronx, NY' p5='Background: Mexican/ Dominican' h2='Christ Taveras'/>
-            <SelectsCard bg={yovany} p1='Graduated:' p2='Hometown: Raleigh, NC' p3='Ethnic Background: Mexican' p4='Pledged Fall 2021' p5='Position: Webmaster' h2='Yovany Heredia'/>
+            {/*<SelectsCard bg={yovany} p1='Graduated:' p2='Hometown: Raleigh, NC' p3='Ethnic Background: Mexican' p4='Pledged Fall 2021' p5='Position: Webmaster' h2='Yovany Heredia'/>*/}
             </div>
     </div>
 </div>
