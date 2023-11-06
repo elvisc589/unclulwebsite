@@ -4,7 +4,7 @@ const SelectsCard = (props) => {
 <div>
 <div className='relative pb-44 mb-9'>
          
-            <img className='top-0 pt-6' src={props.bg} alt='/'/>
+            <img className='top-0 pt-6' src={props.bg} loading="lazy" alt='/'/>
         
 <div className='bg-gray-900/5 absolute w-full h-56'>
     <div className='space-y-9'>

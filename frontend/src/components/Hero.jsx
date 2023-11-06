@@ -2,11 +2,18 @@ import React from 'react'
 import logoVideo from '../assets/LULlogovideo.mov'
 
 
+
 const Hero = () => {
     return (
         <div className='w-full h-[80vh]'>
-            <video className='w-full h-full object-cover' src={logoVideo} autoPlay loop muted/>
-        <div className='max-w-[1140px] m-auto'>
+
+
+<video className='w-full h-full object-cover' src={logoVideo} autoPlay loop muted/>
+
+
+
+        
+       <div className='max-w-[1140px] m-auto'>
         <div className='absolute top-[40%] w-full md:-[50%] max-w-[600px] h-full flex flex-col text-white p-4'>
             <h1 className='font-bold text-4xl drop-shadow-2xl'></h1>
             <a className='inline-block' href='#contact'>

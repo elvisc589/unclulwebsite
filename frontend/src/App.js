@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Selects from './components/Selects'
 import Calendar from './components/index'
+import Chatbot from './components/Chatbot';
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -23,7 +24,9 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={
+
       [<Hero/>,
+    <Chatbot/>,
     <Selects/>,
     <Age/>,
     <Contact/>,
