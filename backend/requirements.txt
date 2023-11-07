@@ -8,5 +8,6 @@ matplotlib
 tiktoken
 textract
 transformers
-openai
+openai==0.28.1
 faiss-cpu
+hypercorn==0.14.4

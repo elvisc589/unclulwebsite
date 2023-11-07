@@ -13,6 +13,9 @@ const Chatbot = () => {
   const chatboxRef = useRef(null);
   const Filter = require('bad-words');
   const profanityFilter = new Filter();
+  const [isChatbotTyping, setIsChatbotTyping] = useState(false); // New state variable
+
+
   let lastMessageTime = 0; // Declare the variable
 
   const handleToggleChatbot = () => {
@@ -23,6 +26,9 @@ const Chatbot = () => {
     setInputMessage(event.target.value);
   };
 const handleSendMessage = () => {
+      if(isChatbotTyping){
+      return;
+      }
       const userMessage = { text: inputMessage, type: 'user' };
       setMessages([...messages, userMessage]);
       setInputMessage('');
@@ -41,10 +47,16 @@ const handleSendMessage = () => {
           return;
       }
 
+      
 
-    
+      setIsChatbotTyping(true);
+      // Simulate typing with ellipsis
+      const typingMessage = { text: '. . .', type: 'bot'};
+      setMessages((prevMessages) => [...prevMessages, typingMessage]);
+
+
       // Make an API request to send the user message and get the chatbot response
-      fetch('/api/chatbot', {
+      fetch('https://fastapi-production-2d01.up.railway.app/api/chatbot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,22 +66,46 @@ const handleSendMessage = () => {
         .then((response) => response.json())
         .then((data) => {
           const botResponse = { text: data.response, type: 'bot' };
-          setMessages((prevMessages) => [...prevMessages, botResponse]);
+          
+
+          setMessages((prevMessages) => [...prevMessages.slice(0, -1), botResponse]); // Remove the ellipsis message
+
+    
+  
+          //clear typing indicator
+          setIsChatbotTyping(false);
         })
         .catch((error) => {
           console.error('Error sending message to chatbot:', error);
         });
     };
   const handleSendFakeMessage = () => {
+    if(isChatbotTyping){
+      return;
+    }
     const fakeuserMessage = { text: inputMessage, type: 'user' };
     setMessages([...messages, fakeuserMessage]);
     setInputMessage('');
-  
-  
+    
+    setIsChatbotTyping(true);
+    // Simulate typing with ellipsis
+    const typingMessage = { text: '. . .', type: 'bot'};
+    setMessages((prevMessages) => [...prevMessages, typingMessage]);
+
+  setTimeout(()=>{
+    //setMessages((prevMessages) => prevMessages.filter((msg) => msg.text !== '. . .'));
+    
     // Simulate a bot response
     const botResponse = { text: 'This is a simulated response from the chatbot.', type: 'bot' };
-    setMessages((prevMessages) => [...prevMessages, botResponse]);
-  };
+    setMessages((prevMessages) => [...prevMessages.slice(0, -1), botResponse]); // Remove the ellipsis message
+
+    
+  
+    //clear typing indicator
+    setIsChatbotTyping(false);
+
+  }, 5000); //5 second delay
+    };
   
 
   useEffect(() => {
@@ -119,7 +155,9 @@ const handleSendMessage = () => {
                     </div>
                   </div>
                 
-                )}
+                )} 
+                
+              
                 {message.type === 'user' && (
                   <div className="flex justify-end">
                     
@@ -143,7 +181,8 @@ const handleSendMessage = () => {
               className="pl-4 w-4/5"
             />
             
-              <AiOutlineSend size={28} className='w-1/5 justify-end' color="black" onClick={handleSendMessage}/>
+              <AiOutlineSend size={28} className='w-1/5 justify-end' color="black" onClick={handleSendMessage}
+              />
           
         
             </div>
@@ -154,7 +193,8 @@ const handleSendMessage = () => {
         {/* Close chatbot button*/}
             <div className="close-button fixed bottom-4 right-4 drop-shadow-xl">
             <div className='button bg-[var(--brown)] rounded-md p-2'>
-              <AiOutlineClose size={35} color="white" onClick={handleToggleChatbot} />
+              <AiOutlineClose size={35} color="white" onClick={handleToggleChatbot} 
+              />
             </div>
           </div>
 

@@ -6,7 +6,7 @@ class ChatMessage(BaseModel):
     message: str
 
 app = FastAPI()
-origins = ["http://localhost:"]
+origins = ["https://unclul.netlify.app"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
