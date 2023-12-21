@@ -1,17 +1,11 @@
 {
-    "version":2,
-    "builds": [
-        {
-            "src": "main.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        { "src": "/*", "dest": "main.py" }
-    ],
+    "version": 2,
     "functions": {
-          "api/chatbot": {
-            "maxDuration": 30 
-          }
-    }
-}
+      "api/chatbot": {
+        "maxDuration": 30
+      }
+    },
+    "routes": [
+      { "src": "/*", "dest": "main.py" }
+    ]
+  }
