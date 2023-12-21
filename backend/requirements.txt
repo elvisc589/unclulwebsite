@@ -5,3 +5,4 @@ langchain
 pypdf
 openai==0.28.1
 faiss-cpu
+tiktoken
