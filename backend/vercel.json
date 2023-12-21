@@ -6,17 +6,12 @@
             "use": "@vercel/python"
         }
     ],
-    
-        "functions": {
-          "api/*": {
-            "memory": 1024, 
-            "maxDuration": 30 
-          }
-    },
-        
-        
-       
     "routes": [
         { "src": "/*", "dest": "main.py" }
-    ]
+    ],
+    "functions": {
+          "api/chatbot": {
+            "maxDuration": 30 
+          }
+    }
 }
