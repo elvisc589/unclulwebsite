@@ -8,6 +8,7 @@
     ],
     "routes": [
         { "src": "/", "dest": "main.py" },
+        { "src": "/api/chatbot", "dest": "main.py" },
 		{ "src": "/docs", "dest": "main.py" },
 		{ "src": "/openapi.json", "dest": "main.py" }
     ]
