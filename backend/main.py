@@ -21,8 +21,3 @@ chatbot_service = ChatbotService()
 def chat_with_bot(message: ChatMessage):
     response = chatbot_service.chatbot_reply(message.message)
     return {"response": response}
-
-@app.get("/api/welcome")
-def welcome_message():
-    response = chatbot_service.get_initial_response()
-    return {"response": response}

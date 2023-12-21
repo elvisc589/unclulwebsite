@@ -3,10 +3,6 @@ pytest >=7.4.2, <7.5.0
 python-dotenv >=1.0.0, <1.1.0
 langchain
 pypdf
-pandas
-matplotlib
-tiktoken
-textract
-transformers
-openai
+openai==0.28.1
 faiss-cpu
+tiktoken
