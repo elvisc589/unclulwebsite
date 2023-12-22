@@ -1,6 +1,7 @@
 fastapi[all] >=0.103.2, <0.104.0
 pytest >=7.4.2, <7.5.0
 python-dotenv >=1.0.0, <1.1.0
+hypercorn==0.14.4
 langchain
 pypdf
 openai==0.28.1
