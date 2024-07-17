@@ -83,7 +83,7 @@ export const hermanos = [
   //   },
   {
     line_name: 'Delta Line "Annus Mirabilis"',
-    line: {
+    line:  {
       ace: {
         name: "Sergio Acero - R.I.P",
         imageUrl: acero,
