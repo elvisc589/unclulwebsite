@@ -1,14 +1,10 @@
 import React from 'react'
-import {BsChatSquareDots} from 'react-icons/bs'
 import logo from '../assets/unclogo.png'
 
 import{
     FaFacebookF,
-    FaTiktok,
-    FaGooglePlusG,
     FaTwitter,
     FaInstagram,
-    FaBars,
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -25,9 +21,9 @@ const Footer = () => {
    <div className='flex items-center'>
         <h2 className='text-center text-[var(--brown)] p-4 text-2xl'>UNC LUL</h2>
      
-    <a target='_blank' href='https://www.facebook.com/UNC.LUL/'><FaFacebookF className='mx-4 fill-[var(--gold)]'/></a>
-            <a target='_blank' href='https://twitter.com/UNC_LUL'><FaTwitter className='mx-4 fill-[var(--gold)]'/></a>
-            <a target='_blank' href='https://www.instagram.com/unc_lul/'><FaInstagram className='mx-4 fill-[var(--gold)]'/></a>
+    <a target='_blank' href='https://www.facebook.com/UNC.LUL/' rel="noreferrer"><FaFacebookF className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://twitter.com/UNC_LUL' rel="noreferrer"><FaTwitter className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://www.instagram.com/unc_lul/' rel="noreferrer"><FaInstagram className='mx-4 fill-[var(--gold)]'/></a>
 </div></div>
 
 </div>
