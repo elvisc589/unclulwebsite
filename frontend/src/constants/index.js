@@ -15,7 +15,7 @@ import ronald from "../assets/ronald.jpg";
 import tuset from "../assets/tuset.jpg";
 import roberto from "../assets/roberto.jpg";
 import camilo from "../assets/camilo.jpg";
-import yovany from "../assets/yovany.jpg";
+//import yovany from "../assets/yovany.jpg";
 import dariel from "../assets/dariel.jpg";
 import christ from "../assets/christ.jpg";
 import christian from "../assets/christian.jpg";

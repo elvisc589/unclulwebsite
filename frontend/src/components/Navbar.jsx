@@ -1,9 +1,6 @@
 import React, {useState} from 'react'
-import {SiThumbtack} from 'react-icons/si'
 import{
     FaFacebookF,
-    FaTiktok,
-    FaGooglePlusG,
     FaTwitter,
     FaInstagram,
     FaBars,
@@ -36,18 +33,18 @@ const Navbar = () => {
             
             
             <li>
-                <a href='/lambdas'>Meet the Lambdas</a>
+                <a href='/lambdas' rel="noreferrer">Meet the Lambdas</a>
             </li>
             <li>
-                <a href='/events'>Events</a>
+                <a href='/events' rel="noreferrer">Events</a>
             </li>
             
         </ul>
         
         <div className='flex justify-between'>
-            <a target='_blank' href='https://www.facebook.com/UNC.LUL/'><FaFacebookF className='mx-4 fill-[var(--gold)]'/></a>
-            <a target='_blank' href='https://twitter.com/UNC_LUL'><FaTwitter className='mx-4 fill-[var(--gold)]'/></a>
-            <a target='_blank' href='https://www.instagram.com/unc_lul/'><FaInstagram className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://www.facebook.com/UNC.LUL/' rel="noreferrer"><FaFacebookF className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://twitter.com/UNC_LUL' rel="noreferrer"><FaTwitter className='mx-4 fill-[var(--gold)]'/></a>
+            <a target='_blank' href='https://www.instagram.com/unc_lul/' rel="noreferrer"><FaInstagram className='mx-4 fill-[var(--gold)]'/></a>
         </div>
         <div onClick={handleNav} className='sm:hidden z-10'>
             <FaBars size={20} className='mr-4 cursor-pointer'/>

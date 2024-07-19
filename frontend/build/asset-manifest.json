@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.01925244.css",
-    "main.js": "/static/js/main.9bae26c8.js",
+    "main.css": "/static/css/main.062bbdd0.css",
+    "main.js": "/static/js/main.4c903e0e.js",
+    "static/media/alan.jpg": "/static/media/alan.4f53cfb0b3ad9b6f4ebd.jpg",
+    "static/media/davidv.JPEG": "/static/media/davidv.92adc8077584966cd9d9.JPEG",
     "static/media/LULlogovideo.mov": "/static/media/LULlogovideo.4b689dd7c6e6f7580ba1.mov",
+    "static/media/juan_g.jpg": "/static/media/juan_g.c3cae94ce2f5dc0aa116.jpg",
     "static/media/edgar.jpg": "/static/media/edgar.1c9f1cc4ccc544a47b01.jpg",
     "static/media/jose.jpg": "/static/media/jose.8742e932f6ab5e46e103.jpg",
     "static/media/elvis.jpg": "/static/media/elvis.93c1d9ab4d479c1eb23e.jpg",
@@ -10,12 +13,12 @@
     "static/media/obdulio.jpg": "/static/media/obdulio.ba85769670c9d43809d5.jpg",
     "static/media/julian.jpg": "/static/media/julian.d530b0aec10a835b9d7e.jpg",
     "static/media/CREST.png": "/static/media/CREST.00f8c81289ee8bad3948.png",
-    "static/media/oldwell.jpg": "/static/media/oldwell.53c2a9b914333bd1451c.jpg",
     "static/media/service.jpg": "/static/media/service.4e434976dec4d7a02a39.jpg",
     "static/media/lambdacup.jpg": "/static/media/lambdacup.03268712b07aca6c5ea8.jpg",
     "static/media/elvate.png": "/static/media/elvate.31dcc74825f523fdcb5e.png",
     "static/media/bbq.jpg": "/static/media/bbq.8db312d588947a2b9176.jpg",
     "static/media/docu.jpg": "/static/media/docu.433ee82e0579a8b459d4.jpg",
+    "static/media/leo.jpg": "/static/media/leo.f9cf146bbc202b7c6948.jpg",
     "static/media/gomez.jpg": "/static/media/gomez.1ed7a2d2fc2d9bfa9f7b.jpg",
     "static/media/worldcup.jpg": "/static/media/worldcup.075b59fb5aabb952ee34.jpg",
     "static/media/unclogo.png": "/static/media/unclogo.2ed7f350da022599cc0e.png",
@@ -33,7 +36,6 @@
     "static/media/3.jpg": "/static/media/3.e4e64d8a7971edb8d3bf.jpg",
     "static/media/ronald.jpg": "/static/media/ronald.beca8e767512a0312a00.jpg",
     "static/media/2.jpg": "/static/media/2.28f6cca235b62a4e9185.jpg",
-    "static/media/yovany.jpg": "/static/media/yovany.cf5ec85583de9fbfdd40.jpg",
     "static/media/retana.jpg": "/static/media/retana.530aaace8bb0501aa8bc.jpg",
     "static/media/nico.jpg": "/static/media/nico.bff01b6c65dcf31de704.jpg",
     "static/media/chicas.jpg": "/static/media/chicas.b10a67109daee7ae285b.jpg",
@@ -56,11 +58,11 @@
     "static/media/saul.jpg": "/static/media/saul.82048b5d99bffdf50200.jpg",
     "static/media/giocruz.jpg": "/static/media/giocruz.a13b1898f2b5cf9b4fa5.jpg",
     "index.html": "/index.html",
-    "main.01925244.css.map": "/static/css/main.01925244.css.map",
-    "main.9bae26c8.js.map": "/static/js/main.9bae26c8.js.map"
+    "main.062bbdd0.css.map": "/static/css/main.062bbdd0.css.map",
+    "main.4c903e0e.js.map": "/static/js/main.4c903e0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.01925244.css",
-    "static/js/main.9bae26c8.js"
+    "static/css/main.062bbdd0.css",
+    "static/js/main.4c903e0e.js"
   ]
 }

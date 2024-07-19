@@ -1,8 +1,4 @@
 import React from 'react'
-import worldcup from '../assets/worldcup.jpg'
-import SelectsCard from './SelectsCard'
-import natlogo from '../assets/natlogo.png'
-import oldwell from '../assets/oldwell.jpg'
 import opener from '../assets/1.jpg'
 import day1 from '../assets/2.jpg'
 import day2 from '../assets/3.jpg'
@@ -23,7 +19,7 @@ const Events = () => {
 <div className='text-6xl font-bold px-4 tracking-wide text-white'></div>
  
 </div>
-           <img className='w-full h-full object-cover' src={opener}/>
+           <img className='w-full h-full object-cover' src={opener} alt="/"/>
         </div>
 
 
