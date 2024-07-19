@@ -1,6 +1,4 @@
 import React from 'react'
-import bbq from '../assets/bbq.jpg'
-import worldcup from '../assets/worldcup.jpg'
 import natlogo from '../assets/natlogo.png'
 import crest from '../assets/CREST.png'
 
@@ -12,7 +10,7 @@ const Nationals = () => {
         
 <div id='nationals bg-[var(--brown)]'>
 <div className='w-full h-[50vh] pt-16 bg-[var(--brown)]'>
-            <img className='w-full h-full object-scale-down sm:object-cover sm:mt-12' src={natlogo}/>
+            <img className='w-full h-full object-scale-down sm:object-cover sm:mt-12' src={natlogo} alt="/"/>
             </div>
             <div className='w-full h-full bg-[var(--brown)]'>
    <div className='max-w-[1140px] w-full h-full m-auto px-4 sm:pt-32 pt-12 text-white'>
@@ -20,8 +18,8 @@ const Nationals = () => {
    <div className='flex flex-col md:col-span-2 sm:space-y-16 space-y-4 items-center'>
              <h2 className='text-center text-4xl font-semibold'>About Us</h2>
              <h2 className='text-center'>______________________</h2>
-            <img className='' src={crest}/>
-            <a target='_blank' href='https://www.launidadlatina.org'>
+            <img className='' src={crest} alt="/"/>
+            <a target='_blank' href='https://www.launidadlatina.org' rel="noreferrer">
             <button className='flex justify-between items-center hover:text-[var(--brown)] mt-10 px-4 py-2 text-xl font-bold bg-[var(--gold)] inline-block rounded-full border-[var(--brown)]'>
                 
                 Visit Nationals

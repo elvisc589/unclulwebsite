@@ -1,6 +1,5 @@
 import React from "react";
 import SelectsCard from "./SelectsCard";
-import worldcup from "../assets/worldcup.jpg";
 import { hermanos } from "../constants";
 
 const Lambdas = () => {

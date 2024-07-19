@@ -60,7 +60,7 @@ const handleSendMessage = () => {
           console.error('Error sending message to chatbot:', error);
         });
     };
-  const handleSendFakeMessage = () => {
+  /*const handleSendFakeMessage = () => {
     const fakeuserMessage = { text: inputMessage, type: 'user' };
     setMessages([...messages, fakeuserMessage]);
     setInputMessage('');
@@ -69,7 +69,7 @@ const handleSendMessage = () => {
     // Simulate a bot response
     const botResponse = { text: 'This is a simulated response from the chatbot.', type: 'bot' };
     setMessages((prevMessages) => [...prevMessages, botResponse]);
-  };
+  };*/
   
 
   useEffect(() => {
