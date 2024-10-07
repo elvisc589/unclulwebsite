@@ -9,7 +9,6 @@ import Lambdas from './components/Lambdas'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Selects from './components/Selects'
-import Chatbot from './components/Chatbot';
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -25,7 +24,6 @@ function App() {
       <Route path='/' element={
 
       [<Hero/>,
-    <Chatbot/>,
     <Selects/>,
     <Age/>,
     <Contact/>,
